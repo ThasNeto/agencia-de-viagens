@@ -1,0 +1,356 @@
+* {	margin: 0;	padding: 0;	border: 0; }
+body {
+	background-color: #80808029;
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+}
+
+/* Conteiner com tamanho maximo */
+.container {
+	max-width: 1024px;
+}
+
+/* Topo */
+.topo {
+	margin: 0 auto;
+	background-color: #fff;
+	height: 55px;
+	display: flex;
+	align-items: center;
+}
+.topo img {
+	width: 32px;
+	height: 32px;
+}
+.topo-titulo {
+	margin: 0 0 0 10px;
+	color: #5d15d1;
+	font-size: 24px;
+}
+
+/* INICIO SEÇÃO FORMULÁRIO */
+/* Área do Formulário */
+.area-bg {
+	width: 100%;
+	height: auto;
+	background-image: url("../assets/bahia.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.area-form {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Topo do formulário */
+.topo-form {
+	color: #fff;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #5f14d1;
+}
+.topo-form img{
+	width: 20px;
+	height: 20px;
+	transform: rotate(-45deg);
+}
+.topo-form h2 {
+	margin: 0 0 0 5px;
+	font-size: 14px;
+	color: #fff;
+}
+
+/* Formulário */
+.formulário {
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 25px 20px 25px;
+	box-sizing: border-box;
+}
+.formulário h3 {
+	font-size: 22px;
+	margin: 0 0 24px 0px;
+}
+
+/* Campos de Input (digitação) */
+form {
+	display: flex;
+	flex-direction: column;
+}
+form label {
+	font-size: 16px;
+	padding: 10px 0;
+}
+form input, form select {
+	width: 100%;
+	margin: 10px 0;
+	height: 32px;
+}
+form input {
+	padding: 0 5px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+form select {
+	padding: 0 3px;
+	box-sizing: border-box;
+}
+.campo-duplo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.campo-duplo div {
+	width: calc(50% - 10px);
+}
+
+/* Campos radio */
+.radio {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.radio div {
+    display: flex;
+    align-items: center;
+    width: 120px !important;
+}
+.radio input {
+    width: 15px;
+	margin: 0 0 0 8px;
+}
+
+/* Campos checkbox */
+.checkbox {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+.checkbox input {
+	width: 15px;
+	height: 15px;
+	margin: 10px 10px 0 8px;
+}
+
+/* Button SUBMIT */
+button {
+	margin-top: 12px;
+	width: 160px;
+	height: 32px;
+	background-color: #5d15d1;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+/* FIM DA SEÇÃO FORMULÁRIO */
+/* DEFINE PADRÕES PARA OFERTAS E ANUNCIOS */
+.ofertas, .anuncios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+.ofertas h3, .anuncios h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.ofertas h4, .anuncios h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+/* FIM PADRÕES PARA OFERTAS E ANUNCIOS */
+
+/* INICIO DA SEÇÃO OFERTAS */
+em {
+	font-weight: bold;
+}
+.imagens-flex {
+	width: 100%;
+	height: 375px;
+	display: flex;
+	justify-content: space-between;
+}
+.imagens-pequenas {
+	width: calc(50% - 10px);
+	height: 100%;
+}
+.imagem-grande {
+	position: relative;	
+}
+.imagens-pequenas {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+.imagens-pequenas figure {
+	position: relative;
+	width: calc(50% - 10px);
+	height: calc(50% - 10px);
+	margin: 0 6px;
+}
+.imagem-grande img, .imagens-pequenas img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.imagem-grande figcaption, .imagens-pequenas figcaption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgb(0 0 0 / 50%);
+	font-size: 17px;
+	color: #fff;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+/* FIM DA SEÇÃO OFERTAS */
+
+/* INÍCIO DA SEÇÃO ANÚNCIOS */
+.anuncios-flex {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.imagem-anuncio{
+	width: calc(50% - 10px);
+	height: 100%;
+}
+figure.imagem-anuncio img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+figure.imagem-anuncio div {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+.descriçao h3 {
+    font-size: 16px;
+}
+.descriçao p {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+/* FIM DA SEÇÃO ANÚNCIOS */
+
+/* INICIO FOOTER */
+footer {
+	width: 100%;
+	background: #5d15d1;
+	margin: 32px 0 0 0;
+}
+
+.rodape {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.rodape-conteudo {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0;
+}
+
+.rodape-conteudo h3 {
+	color: #fff;
+	margin: 0 0 15px 0;
+	font-size: 20px;
+}
+
+.rodape-conteudo div {
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+}
+
+.rodape-conteudo img {
+	width: 18px;
+}
+
+.rodape-conteudo span {
+	color: #fff;
+	font-size: 14px;
+	margin: 0 0 0 10px;
+}
+/* FIM FOOTER */
+
+/* INICIO RESPONSIVO */
+/* Telas de Celular com até 540px */
+@media screen and (max-width: 540px) {
+	.campo-duplo, .radio, .checkbox {
+		flex-direction: column;
+	}
+	.campo-duplo div, .radio div, .checkbox div {
+		width: 100%;
+	}
+}
+
+/* Telas de Tablet entre 541px e 768px */
+@media screen and (max-width: 768px) {
+	
+}
+
+/* Telas entre 769px e 1100px */
+@media screen and (max-width: 1100px) {
+	/* Container geral */
+	.container {
+		width: 90%;
+	}
+
+	/* button do formulário */
+	button {
+		width: 100%;
+	}
+
+	/* Imagens da área de ofertas */
+	.imagens-flex {
+		flex-direction: column;
+		height: 100%;
+	}
+	.imagens-pequenas {
+		width: 100%;
+	}
+	.imagens-pequenas figure, .imagem-grande img{
+		margin: 10px 0 0 0;
+		width: 100%;
+		height: 225px;
+	}
+
+	/* Imagens da área de anúncios */
+	.anuncios-flex {
+		margin: 15px 0 0 0;
+		width: 100%;
+		flex-direction: column;
+	}
+	.imagem-anuncio {
+		width: 100%;
+	}
+
+	/* Rodapé */
+	.rodape {
+		flex-direction: column;
+		justify-content: center;
+		width: 250px;
+	}
+}
+
+/* Telas de Desktop com mais de 1100px */
+@media screen and (min-width: 1100px) {
+	
+}
